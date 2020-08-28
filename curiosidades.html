@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8">
+
+  <title>História dos Computadores</title>
+
+  <meta name="viewport" content ="width=device-width,initial-scale=1,user-scalable=yes" />
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+  <!-- Bootstrap minified CSS -->
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+  <!-- Highcharts JS -->
+  <script type="text/javascript" src="http://code.highcharts.com/highcharts.js"></script>
+  <script src="https://code.highcharts.com/modules/drilldown.js"></script>
+
+  <!-- LeaftLet JS -->
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"> 
+  <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"></script>
+
+  <!-- Icons para usar -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.5.0/css/all.css' integrity='sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU' crossorigin='anonymous'>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+  <!-- Ficheiros CSS para customizar a navbar -->
+  <link rel="stylesheet" type="text/css" href="CSS/Navbar.css"> 
+  <link rel="stylesheet" type="text/css" href="CSS/Acerca.css">
+
+
+  <style>
+
+  body {
+    font: normal 16px/1.5 "Helvetica Neue", sans-serif;
+    background: #456990;
+    color: #fff;
+  } 
+
+  .header {
+    padding: 50px;
+    text-align: center;
+    background: white;
+    width: 100vw;
+    background-image: url("Imagens/processador.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 1370px 350px;
+    position: relative;
+  }
+
+  .header h1 {
+    font-size: 38px;
+    text-align: left;
+    color: white;
+  }
+
+  @media screen and (max-width: 500px) {
+    .header a {
+    float: none;
+    display: block;
+    text-align: left;
+    }
+
+   .header-right {
+    float: none;
+    }
+  }
+
+
+  .fixado {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  .footer-container {
+    margin-top: 10px;
+
+  }
+
+  .footer {
+    width: 100%;
+    padding-top:25px;
+    padding-right:25px;
+    padding-bottom:25px;
+    padding-left:25px;
+    text-align: left;
+    background-color: #88C232;
+    margin:auto;
+  }
+  
+  .footer h1 {
+    width:100%;
+    left: 50%;
+    right: 50%;
+    text-align: left;
+    font-size: 25px;
+    padding-left: 3%;
+    position: absolute;
+    transform: translateX(-50%) translateY(-50%);
+    text-align: left;
+    color: white;
+    margin:auto;
+  }
+
+  #Relogio {
+    width: 100%;
+    left: 50%;
+    right: 50%;
+    text-align: right;
+    position: absolute;
+    padding-right: 3%;
+    transform: translateX(-50%) translateY(-50%);
+    color: white;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing:8px;
+  }
+
+#coluna1 {
+  width: 50%;
+  padding-top:10px;
+  padding-right:10px;
+  padding-bottom:25px;
+  padding-left:25px;
+  float: left;
+}
+
+
+#coluna2 {
+  width: 50%;
+  padding-top:10px;
+  padding-right:10px;
+  padding-bottom:25px;
+  padding-left:25px;
+  float: right;
+}
+
+@media only screen and (max-width: 500px) {
+
+  #coluna1 {
+    width: 100%;
+    padding-bottom: 10px;
+    float: none;
+  }
+
+  #coluna2 {
+    width: 100%;
+    padding-bottom: 10px;
+    float: none;
+  }
+    
+}
+
+.conteudo h1 {
+  color: #88C232;
+  font-weight: bold;
+  text-align: center;
+}
+
+  </style>
+
+</head>
+<body>
+
+ <!-- CODIGO DO HEADER -->
+<div class="header" id="Header">
+  <h1>História dos Computadores</h1>
+</div>
+
+  
+ <!-- CODIGO DA NAVBAR -->
+<div class="navbar" id ="Navbar">
+  <a href="Index.html"><i class="fa fa-fw fa-home"></i> Home</a>
+  <a href="mecanismos.html"><i class="fa fa-fw fa-calculator"></i> Mecanismos de Computação</a>
+
+  <div class="dropdown" >
+    <button class="dropbtn">&nbsp;Gerações
+      <i class="material-icons" style="float:left;font-size:25px;color:white;">computer</i>
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="1geracao.html"><i class="far fa-lightbulb" style="font-size: 20px"></i> 1º Geração</a>
+      <a href="2geracao.html"><i class="fas fa-memory" style="color:white"></i> 2º Geração</a>
+      <a href="3geracao.html"><i class="fas fa-microchip"></i> 3º Geração</a>
+      <a href="4geracao.html"><i class="fas fa-signal"></i> 4º Geração</a>
+      <a href="5geracao.html"><i class="fas fa-brain"></i> 5º Geração</a>
+    </div>
+  </div>
+
+  <a href="curiosidades.html"><i class="fas fa-question-circle"></i> Curiosidades</a>
+
+  <button id="myBtn"><b style="float:right; font-size: 17px; font-family: Helvetica Neue, sans-serif;"><i class="fas fa-info-circle"></i> Acerca</b></button>
+
+  <div id="myModal" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>Acerca deste website</h2>
+    </div>
+    <div class="modal-body">
+      <div class = "row">
+        <div class = "first-column" id="colunamodal1">
+          <p> <span style="color:#3831FC;font-weight:bold">AUTORES:</span> <b>Luís Couto(89078) e Pedro Rocha(95057)</b> </p>
+          <p> <span style="color:#3831FC;font-weight:bold">DATA DE CRIAÇÃO:</span> <b>20/12/2018</b> </p>
+          <p> <span style="color:#3831FC;font-weight:bold">DISCIPLINA:</span> <b>Laboratórios de Informática</b> </p>
+          <p> <span style="color:#3831FC;font-weight:bold">CURSO:</span> <b>Engenharia de Computadores e Telemática</b> </p>
+          <p> <span style="color:#3831FC;font-weight:bold">UNIVERSIDADE:</span> <b>Universidade de Aveiro</b> </p>
+          <p><a href="http://code.ua.pt//projects/historia-dos-computadores/" title="Ir para o projeto no Code.Ua" style="color: blue; font-weight:bold; font-size: 14px">PROJETO CODE.UA</a></p>
+
+        </div>
+        <div class = "second-column" id = "colunamodal2">
+          <p> <span style="color:#3831FC;font-weight:bold">RECURSOS EXTERNOS UTILIZADOS:</span> </p>
+          <p><a href="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" style="color: blue; font-weight:bold; font-size: 14px">jQuery Library JS</a>
+           <a href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" style="color: blue; font-weight:bold; font-size: 14px">Bootstrap Minified CSS</a>
+           <a href="http://code.highcharts.com/highcharts.js" style="color: blue; font-weight:bold; font-size: 14px">Highcharts JS</a>
+           <a href="https://code.highcharts.com/modules/drilldown.js" style="color: blue; font-weight:bold; font-size: 14px">Highcharts Drilldown JS </a>
+           <a href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css" style="color: blue; font-weight:bold; font-size: 14px">Leaflet CSS</a>
+           <a href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js" style="color: blue; font-weight:bold; font-size: 14px">Leaflet JS</a>
+           <a href="https://fonts.googleapis.com/icon?family=Material+Icons" style="color: blue; font-weight:bold; font-size: 14px">Icons para a NavBar</a>
+           <a href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" style="color: blue; font-weight:bold; font-size: 14px">Icons CSS</a>
+           <a href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" style="color: blue; font-weight:bold; font-size: 14px">Icons CSS</a>
+          <a href="https://webdesign.tutsplus.com/tutorials" style="color: blue; font-weight:bold; font-size: 14px">Timeline</a>
+          <br>
+          </p>
+        
+
+          <p> <span style="color:#3831FC;font-weight:bold">CONTRIBUIÇÃO DE CADA ALUNO:</span> </p>
+          <p> <b>O aluno Luís Couto ficou encarregue da NavBar, do Footer, da Página Principal (Index), dos Mecanismos de Computação, da 1º Geração e da 2º Geração.</b></p>
+          <p><b>O aluno Pedro Rocha ficou encarregue do Header, do Acerca, da 3º Geração, da 4º Geração e da 5º Geração. </b> </p>
+          <p><b>A secção das Curiosidades foi feita por ambos os membros. </b></p>
+          <p><b>Tendo isto em conta, a contribuição de LC foi 50% e de PR 50%</b></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+   <!-- Ficheiros JS para o funcionamento da navbar -->
+<script type = "text/javascript" src = "JS/Acerca.js" ></script> 
+
+</div>
+
+<div class="row" id = "linha1">
+  <div class="first-column" id="coluna1">
+    <div class="conteudo" style="font-family: Helvetica Neue, sans-serif; padding-top: 10px; padding-bottom: 10px; padding-right: 20px; padding-left: 20px">
+     <h1>Locais Importantes</h1>  
+
+     <!--MAPA-->
+    <div id="oMeuMapa" style="width: 100%; height: 400px;"></div>
+    <script type="text/javascript" src="JS/map.js"></script>
+    <span id="coordenadas"></span>
+    <!--FIM DO MAPA-->
+    </div>
+  </div>
+
+  <div class="second-column" id="coluna2">
+    <div class="conteudo" style="font-family: Helvetica Neue, sans-serif; padding-top: 10px; padding-bottom: 10px; padding-right: 20px; padding-left: 20px">
+     <h1>Valor de Algumas Empresas</h1>  
+
+     <div id="container1" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+
+     <script> 
+      Highcharts.chart('container1', {
+    chart: {
+        type: 'line'
+    },
+    title: {
+        text: 'Evolução do valor das ações ao longo dos anos'
+    },
+    subtitle: {
+        text: 'Valor de cada ação na bolsa'
+    },
+    xAxis: {
+        categories: ['1960', '1965', '1970', '1975', '1980', '1985', '1990', '1995', '2000', '2005', '2010', '2015', '2019'] // TEM 13 
+    },
+    yAxis: {
+        title: {
+            text: 'Valor de 1 ação (€)'
+        }
+    },
+    plotOptions: {
+        line: {
+            dataLabels: {
+                enabled: false
+            },
+            enableMouseTracking: true
+        }
+    },
+    series: [ {
+        name: 'Microsoft',
+        data: [0, 0, 0, 0, 0, 0.44, 0.53, 3.25, 20.16, 16.76, 18.37, 36.01, 94.71]
+    }, {
+        name: 'Apple',
+        data: [0, 0, 0, 0, 0.35, 0.18, 1.06, 1.06, 2.81, 4.66, 27.26, 100.24, 137.88]
+
+    }, {name: 'IBM',
+        data: [12.13, 10.76, 5.54, 5.28, 7.3, 13.89, 14.77, 14.42, 70.26, 48.1, 86.79, 126.18, 108.86]
+
+    }, {name: 'Intel',
+        data: [0, 0, 0, 0, 0.18, 0.26, 0.53, 4.4, 43.7, 14.7, 13.89, 27.46, 43.14]
+
+    }, {name: 'Texas Instruments',
+        data: [0, 0, 0.88, 1.23, 1.06, 1.14, 1.41, 5.36, 53.99, 21.37, 16.71, 40.45, 87.4]
+    }
+    ]
+  });
+</script>
+    
+</div>
+</div>
+</div>
+
+
+<div class="row" id = "linha2">
+  <div class="first-column" id="coluna1">
+    <div class="conteudo" style="font-family: Helvetica Neue, sans-serif; padding-top: 10px; padding-bottom: 10px; padding-right: 20px; padding-left: 20px">
+     <h1>Utilizadores da Internet</h1>  
+     <div id="container2" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+
+      <script>
+       Highcharts.chart('container2', {
+    chart: {
+        type: 'pie'
+    },
+    title: {
+        text: 'Percentagem da populaçao mundial que utiliza a Internet'
+    },
+    subtitle: {
+        text: 'Clique no gráfico para saber mais'
+    },
+    plotOptions: {
+        series: {
+            dataLabels: {
+                enabled: true,
+                format: '{point.name}: {point.y:.1f}%'
+            }
+        }
+    },
+    "series": [
+        {
+            "name": "",
+            "colorByPoint": true,
+            "data": [
+                {
+                    "name": "Não Utilizadores",
+                    "y": 44.9,
+                },
+                {
+                    "name": "Utilizadores",
+                    "y": 55.1,
+                    "drilldown": "Utilizadores"
+                },
+            ]
+        }
+    ],
+    "drilldown": {
+        "series": [
+            {
+                "name": "Utilizadores",
+                "id": "Utilizadores",
+                "data": [
+                    [
+                        "Africa",
+                        11.0
+                    ],
+                    [
+                        "Asia",
+                        49.0
+                    ],
+                    [
+                        "Europa",
+                        16.8
+                    ],
+                    [
+                        "América Latina",
+                        10.4
+                    ],
+                    [
+                        "Médio Oriente",
+                        3.9
+                    ],
+                    [
+                        "América do Norte",
+                        8.2
+                    ],
+                    [
+                        "Oceânia",
+                        0.7
+                    
+                    ]
+                ]
+            },
+            
+        ]
+    }
+});
+</script>
+  </div>
+  </div>
+
+  <div class="second-column" id="coluna2">
+    <div class="conteudo" style="font-family: Helvetica Neue, sans-serif; padding-top: 10px; padding-bottom: 10px; padding-right: 20px; padding-left: 20px">
+     <h1>Número de Transístores</h1>  
+
+     <div id="container3" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+
+     <script> 
+      Highcharts.chart('container3', {
+  chart: {
+    type: 'column'
+  },
+  title: {
+    text: 'Número de transístores por circuito'
+  },
+  subtitle: {
+    text: 'É usado o valor mais alto encontrado num processador nesse espaço de tempo'
+  },
+  xAxis: {
+    categories: [
+      '1970-1975',
+      '1975-1980',
+      '1980-1985',
+      '1985-1990',
+      '1990-1995',
+      '1995-2000',
+      '2000-2005',
+      '2005-2010',
+      '2010-2015',
+      '2015-2020',
+    ],
+    crosshair: true
+  },
+  yAxis: {
+    min: 0,
+    title: {
+      text: 'Número de Transístores (milhões)'
+    }
+  },
+  tooltip: {
+    headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+    pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+      '<td style="padding:0"><b>{point.y:.3.f} milhões</b></td></tr>',
+    footerFormat: '</table>',
+    shared: true,
+    useHTML: true
+  },
+  plotOptions: {
+    column: {
+      pointPadding: -0.5,
+      borderWidth: 0
+    }
+  },
+  series: [{
+    name: 'Transístores',
+    data: [0.008,0.068,0.19,1.18,3.1,27.4,592,1900,5560,23600]
+  }
+  ]
+});
+</script>
+    
+</div>
+</div>
+
+
+</div>
+
+<!-- COMEÇA O CODIGO PARA O FOOTER-->
+<div class="footer-container">
+<div class="footer">
+
+    <!-- Relógio -->
+  <div class="clock" id="Relogio" ></div>
+  <script>
+    function Tempo(){
+    var data = new Date();
+    var sessao = "AM";
+    var hora = data.getHours(); 
+    var min = data.getMinutes(); 
+    var seg = data.getSeconds(); 
+    
+    
+    if(hora == 0){
+        hora = 12;
+    }
+    
+    if(hora > 12){
+        hora = hora - 12;
+        sessao = "PM";
+    }
+    seg = (seg < 10) ? "0" + seg : seg;
+    min = (min < 10) ? "0" + min : min;
+    hora = (hora < 10) ? "0" + hora : hora;
+    var horas = hora + ":" + min + ":" + seg + " " + sessao;
+    document.getElementById("Relogio").textContent = horas;
+    document.getElementById("Relogio").innerText = horas;
+    setTimeout(Tempo, 1000);
+    }
+    Tempo();
+  </script>
+
+  <!-- Data -->
+  <div id="data">
+  <h1><span style="color:white;font-size: 23px;">DATA ACTUAL: </span>
+    <script type = "text/javascript" src = "JS/Data.js" ></script> </h1>
+  </div>
+</div>
+</div>
+<!-- ACABA O CODIGO PARA O FOOTER-->
+
+
+
+
+    
+   
+
+
+</body>
+</html>

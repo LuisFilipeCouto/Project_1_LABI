@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8">
+
+  <title>História dos Computadores</title>
+
+  <meta name="viewport" content ="width=device-width,initial-scale=1,user-scalable=yes" />
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+  <!-- Bootstrap minified CSS -->
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+  <!-- Icons para usar -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.5.0/css/all.css' integrity='sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU' crossorigin='anonymous'>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+
+  <!-- Ficheiros CSS para customizar a navbar -->
+  <link rel="stylesheet" type="text/css" href="CSS/Navbar.css"> 
+  <link rel="stylesheet" type="text/css" href="CSS/Acerca.css">
+
+
+  <style>
+
+  body {
+    font: normal 16px/1.5 "Helvetica Neue", sans-serif;
+    background: #456990;
+    color: #fff;
+  } 
+
+  .header {
+    padding: 50px;
+    text-align: center;
+    background: white;
+    width: 100vw;
+    background-image: url("Imagens/processador.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 1370px 350px;
+    position: relative;
+  }
+
+  .header h1 {
+    font-size: 38px;
+    text-align: left;
+    color: white;
+  }
+
+  @media screen and (max-width: 500px) {
+    .header a {
+    float: none;
+    display: block;
+    text-align: left;
+    }
+
+   .header-right {
+    float: none;
+    }
+  }
+
+
+  .fixado {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  .footer-container {
+    margin-top: 10px;
+
+  }
+
+  .footer {
+    width: 100%;
+    padding-top:25px;
+    padding-right:25px;
+    padding-bottom:25px;
+    padding-left:25px;
+    text-align: left;
+    background-color: #88C232;
+    margin:auto;
+  }
+  
+  .footer h1 {
+    width:100%;
+    left: 50%;
+    right: 50%;
+    text-align: left;
+    font-size: 25px;
+    padding-left: 3%;
+    position: absolute;
+    transform: translateX(-50%) translateY(-50%);
+    text-align: left;
+    color: white;
+    margin:auto;
+  }
+
+  #Relogio {
+    width: 100%;
+    left: 50%;
+    right: 50%;
+    text-align: right;
+    position: absolute;
+    padding-right: 3%;
+    transform: translateX(-50%) translateY(-50%);
+    color: white;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing:8px;
+  }
+
+.collapsible-container {
+  margin-bottom: 50px;
+  margin-top: 10px;
+}
+
+.collapsible {
+  background-color: #88C232;
+  color: white;
+  cursor: pointer;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 100%;
+  text-align: left;
+  font-size: 16px;
+}
+
+.active, .collapsible:hover {
+  background-color: #88C232;
+}
+
+.collapsible:after {
+  color: #88C232;
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.collapsible-conteudo {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  padding-left: 25px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #456990;
+}
+
+.conteudo h1 {
+  color: #88C232;
+  font-weight: bold;
+  text-align: center;
+}
+
+.conteudo h2 {
+  color: #88C232;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.conteudo h3 {
+  color: #88C232;
+  text-align: right;
+  font-weight: bold;
+  font-size: 1.5em;
+
+}
+
+.imagem-esquerda {
+  float: left;
+  padding-right: 20px;
+  width: 20%;
+  height: 20%;
+}
+
+
+@media screen and (max-width: 50em) {
+  .imagem-esquerda {
+    float: none;
+    max-width: 100%;
+    margin: 0;
+  }
+  .imagem-esquerda .thumbnail {
+    width: 100%;
+  }
+  .imagem-esquerda .thumbnail img {
+    width: 100%;
+  }
+}
+
+.imagem-direita {
+  float: right;
+  padding-left: 20px;
+  width: 20%;
+  height: 20%;
+  margin-top: 10px;
+  outline: none;
+ 
+}
+
+
+@media screen and (max-width: 50em) {
+  .imagem-direita {
+    float: right;
+    max-width: 100%;
+    margin: 0;
+  }
+  .imagem-direita .thumbnail {
+    width: 100%;
+  }
+  .imagem-direita .thumbnail img {
+    width: 100%;
+  }
+}
+  </style>
+
+</head>
+<body>
+
+ <!-- CODIGO DO HEADER -->
+<div class="header" id="Header">
+  <h1>História dos Computadores</h1>
+</div>
+
+  
+ <!-- CODIGO DA NAVBAR -->
+<div class="navbar" id ="Navbar">
+  <a href="Index.html"><i class="fa fa-fw fa-home"></i> Home</a>
+  <a href="mecanismos.html"><i class="fa fa-fw fa-calculator"></i> Mecanismos de Computação</a>
+
+  <div class="dropdown" >
+    <button class="dropbtn">&nbsp;Gerações
+      <i class="material-icons" style="float:left;font-size:25px;color:white;">computer</i>
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="1geracao.html"><i class="far fa-lightbulb" style="font-size: 20px"></i> 1º Geração</a>
+      <a href="2geracao.html"><i class="fas fa-memory" style="color:white"></i> 2º Geração</a>
+      <a href="3geracao.html"><i class="fas fa-microchip"></i> 3º Geração</a>
+      <a href="4geracao.html"><i class="fas fa-signal"></i> 4º Geração</a>
+      <a href="5geracao.html"><i class="fas fa-brain"></i> 5º Geração</a>
+    </div>
+  </div>
+
+  <a href="curiosidades.html"><i class="fas fa-question-circle"></i> Curiosidades</a>
+
+  <button id="myBtn"><b style="float:right; font-size: 17px; font-family: Helvetica Neue, sans-serif;"><i class="fas fa-info-circle"></i> Acerca</b></button>
+
+  <div id="myModal" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>Acerca deste website</h2>
+    </div>
+    <div class="modal-body">
+      <div class = "row">
+        <div class = "first-column" id="colunamodal1">
+          <p> <span style="color:#3831FC;font-weight:bold">AUTORES:</span> <b>Luís Couto(89078) e Pedro Rocha(95057)</b> </p>
+          <p> <span style="color:#3831FC;font-weight:bold">DATA DE CRIAÇÃO:</span> <b>20/12/2018</b> </p>
+          <p> <span style="color:#3831FC;font-weight:bold">DISCIPLINA:</span> <b>Laboratórios de Informática</b> </p>
+          <p> <span style="color:#3831FC;font-weight:bold">CURSO:</span> <b>Engenharia de Computadores e Telemática</b> </p>
+          <p> <span style="color:#3831FC;font-weight:bold">UNIVERSIDADE:</span> <b>Universidade de Aveiro</b> </p>
+          <p><a href="http://code.ua.pt//projects/historia-dos-computadores/" title="Ir para o projeto no Code.Ua" style="color: blue; font-weight:bold; font-size: 14px">PROJETO CODE.UA</a></p>
+
+        </div>
+        <div class = "second-column" id = "colunamodal2">
+          <p> <span style="color:#3831FC;font-weight:bold">RECURSOS EXTERNOS UTILIZADOS:</span> </p>
+          <p><a href="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" style="color: blue; font-weight:bold; font-size: 14px">jQuery Library JS</a>
+           <a href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" style="color: blue; font-weight:bold; font-size: 14px">Bootstrap Minified CSS</a>
+           <a href="http://code.highcharts.com/highcharts.js" style="color: blue; font-weight:bold; font-size: 14px">Highcharts JS</a>
+           <a href="https://code.highcharts.com/modules/drilldown.js" style="color: blue; font-weight:bold; font-size: 14px">Highcharts Drilldown JS </a>
+           <a href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css" style="color: blue; font-weight:bold; font-size: 14px">Leaflet CSS</a>
+           <a href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js" style="color: blue; font-weight:bold; font-size: 14px">Leaflet JS</a>
+           <a href="https://fonts.googleapis.com/icon?family=Material+Icons" style="color: blue; font-weight:bold; font-size: 14px">Icons para a NavBar</a>
+           <a href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" style="color: blue; font-weight:bold; font-size: 14px">Icons CSS</a>
+           <a href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" style="color: blue; font-weight:bold; font-size: 14px">Icons CSS</a>
+          <a href="https://webdesign.tutsplus.com/tutorials" style="color: blue; font-weight:bold; font-size: 14px">Timeline</a>
+          <br>
+          </p>
+        
+
+          <p> <span style="color:#3831FC;font-weight:bold">CONTRIBUIÇÃO DE CADA ALUNO:</span> </p>
+          <p> <b>O aluno Luís Couto ficou encarregue da NavBar, do Footer, da Página Principal (Index), dos Mecanismos de Computação, da 1º Geração e da 2º Geração.</b></p>
+          <p><b>O aluno Pedro Rocha ficou encarregue do Header, do Acerca, da 3º Geração, da 4º Geração e da 5º Geração. </b> </p>
+          <p><b>A secção das Curiosidades foi feita por ambos os membros. </b></p>
+          <p><b>Tendo isto em conta, a contribuição de LC foi 50% e de PR 50%</b></p>
+        </div>
+    
+      </div>
+    </div>
+  </div>
+</div>
+
+   <!-- Ficheiros JS para o funcionamento da navbar -->
+ <script type = "text/javascript" src = "JS/Navbar.js" ></script> 
+ <script type = "text/javascript" src = "JS/Acerca.js" ></script> 
+</div>
+
+
+
+
+  <div class="conteudo" style="font-family: Helvetica Neue, sans-serif; padding-top: 10px; padding-bottom: 10px; padding-right: 20px; padding-left: 20px">
+     <h1 id ="Circuito"> Terceira Geração de Computadores (1965-1971)</h1>
+     <br>
+    <p>A terceira geração de computadores teve em início em 1965 e teve como principal destaque a implementação de <span style="color:#88C232;"><strong>circuitos integrados</strong></span>. A ideia dos <span style="color:#88C232;"><strong>circuitos integrados</strong></span> começou a ser desenhada por <span style="color:#88C232;"><strong>Geoffrey W. A. Dummer</strong></span> na década de 50. Para propagar e dar a conhecer a sua ideia, deu várias palestras e só em 1958, juntamente, com <span style="color:#88C232;"><strong>Robert Noyce, Jean Hoerni, Jack Kilby e Kurt Lehovec</strong></span> é que se iniciaram os desenvolvimentos, sendo construido, nesse mesmo ano, por <span style="color:#88C232;"><strong>Jack Kilby</strong></span>, o primeiro <span style="color:#88C232;"><strong>circuito integrado</strong></span> funcional. <span style="color:#88C232;"><strong>Kilby</span></strong> viria mais tarde, no ano de 2000, a ganhar o prémio Nobel da Fisíca, pelo seu <i>"contributo na invenção do circuito integrado"</i>. </p>
+
+    <br>
+ 
+    <h2 id="FORTRAN"> Circuito Integrado </h2>
+    <div class="imagem-esquerda">
+      <div class="thumbnail">
+        <img src="Imagens/circuito_integrado.jpg" alt="circuito integrado">
+      </div>
+    </div>
+    
+
+    <p>Estes eram compostos por unidades de encapsulamento semicondutoras que agrupam <span style="color:#88C232;"><strong>transístores</strong></span>, resistores, diodos e outros componentes elétricos interligados entre si e que viriam a ser conhecidos como chips. Na altura havia duas variedades de <span style="color:#88C232;"><strong>circuitos integrados</span></strong>, os SSI (cerca de 10 transistores por chip) e os MSI (cerca de 100 transistores por chip). O aparecimento dos <span style="color:#88C232;"><strong>circuitos integrados</strong></span> e o desuso de
+      <span style="color:#88C232;"><strong>transístores</strong></span> trouxe enúmeras vantagens ao mundo da computação. Esta troca possibilitou uma diminuição do tamanho dos computadores, do aquecimento e do consumo de energia. A próximidade dos circuitos possibilitou um aumentos da velocidade de processamentos dos computadores, origiando a mais operações por segundo. </p>
+    <br>
+    <br>
+
+
+
+    <h3>Linguagens de Programação de alto nível</h3>
+    <div class="imagem-direita">
+      <div class="thumbnail">
+        <img src="Imagens/fortran.jpeg" alt="Gordon Moore">
+      </div>
+      
+    </div>
+    <br>
+
+    <p>Com esta vasta mudança de <i>hardware</i> vieram naturalmente mudanças a nível de <i>software</i>. Depois da criação e uso de linguagens de baixo nível do tipo <i>Assembly</i>, houve a criação e o uso geral de <span style="color:#88C232;"><strong>linguagens de programação de alto nível </strong></span> como o <span style="color:#88C232;"><strong>FORTRAN</strong></span>, <span style="color:#88C232;"><strong>COBOL</strong></span>, <span style="color:#88C232;"><strong>ALGOL</strong></span> e <span style="color:#88C232;"><strong>Pascal</strong></span></p>
+    <br>
+    <br>
+    <br>
+    <h2 id="Moore">Lei de Moore</h2>
+    <div class="imagem-esquerda">
+      <div class="thumbnail">
+        <img src="Imagens/gordon_moore.jpeg" alt="Gordon Moore">
+      </div>
+    </div>
+    <p>Em 1965, para acompanhar o progressivo crescimento dos <span style="color:#88C232;"><strong>circuitos integrados</strong></span>, surgiu a <span style="color:#88C232;"><strong>Lei de Moore</strong></span>. Esta lei estabelecia uma pseudo-regra para a evolução dos computadores que dizia que em cada ano o número de transistores dos chips duplicava mas o custo permanecia o mesmo. Esta lei com o passar dos tempo foi se tornando cada vez mais real, pois sem ela, talvez não tivéssemos um crescimento tão acelerado do hardware a preços cada vez mais acessíveis ao consumidor final. Nos tempos que correm é cada vez mais provável que a <span style="color:#88C232;"><strong>Lei de Moore</strong></span> acabe, pois os engenheiros estão a desenvolver sistemas que exigem menos do processador e os custos associados a novas pesquisas estão cada vez mais altos.</p>
+    <br>
+    <br>
+  </div>
+
+<div class="collapsible-container">
+  <button class="collapsible" style="font-size: 30px; text-align: center;">Resumo da 3º Geração de Computadores</button>
+  <div class="collapsible-conteudo">
+  <br>
+    <ul>
+    <li>Implementação de circuitos integrados</li>
+   
+    <li>Aumento de velocidade de processamento</li>
+  
+    <li>Processo de fabrico mais facilitado</li>
+
+    <li>Criação de linguagens de alto nível</li>
+ 
+    <li>Implementação da Lei de Moore</li>
+   
+    <li>Redução do tamanho e calor gerado</li>
+    </ul>
+
+  <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.maxHeight){
+        content.style.maxHeight = null;
+      } 
+      else {
+      content.style.maxHeight = content.scrollHeight + "px";
+      } 
+    });
+  }
+</script>
+</div>
+</div>
+
+
+<!-- COMEÇA O CODIGO PARA O FOOTER-->
+<div class="footer-container">
+<div class="footer">
+
+    <!-- Relógio -->
+  <div class="clock" id="Relogio" ></div>
+  <script>
+    function Tempo(){
+    var date = new Date();
+    var hora = date.getHours(); 
+    var min = date.getMinutes(); 
+    var seg = date.getSeconds(); 
+    var session = "AM";
+    
+    if(hora == 0){
+        hora = 12;
+    }
+    
+    if(hora > 12){
+        hora = hora - 12;
+        session = "PM";
+    }
+    hora = (hora < 10) ? "0" + hora : hora;
+    min = (min < 10) ? "0" + min : min;
+    seg = (seg < 10) ? "0" + seg : seg;
+    var time = hora + ":" + min + ":" + seg + " " + session;
+    document.getElementById("Relogio").innerText = time;
+    document.getElementById("Relogio").textContent = time;
+    setTimeout(Tempo, 1000);
+    }
+    Tempo();
+  </script>
+
+  <!-- Data -->
+  <h1><span style="color:white;font-size: 23px;">DATA ACTUAL: </span>
+    <script type = "text/javascript" src = "JS/Data.js" ></script> </h1>
+  </div>
+</div>
+<!-- ACABA O CODIGO PARA O FOOTER-->
+
+
+</body>
+</html>

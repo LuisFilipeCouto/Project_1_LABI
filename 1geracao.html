@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8">
+
+  <title>História dos Computadores</title>
+
+  <meta name="viewport" content ="width=device-width,initial-scale=1,user-scalable=yes" />
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+  <!-- Bootstrap minified CSS -->
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+  <!-- Icons para usar -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.5.0/css/all.css' integrity='sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU' crossorigin='anonymous'>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+
+  <!-- Ficheiros CSS para customizar a navbar -->
+  <link rel="stylesheet" type="text/css" href="CSS/Navbar.css"> 
+  <link rel="stylesheet" type="text/css" href="CSS/Acerca.css">
+
+
+  <style>
+
+  body {
+    font: normal 16px/1.5 "Helvetica Neue", sans-serif;
+    background: #456990;
+    color: #fff;
+  } 
+
+  .header {
+    padding: 50px;
+    text-align: center;
+    background: white;
+    width: 100vw;
+    background-image: url("Imagens/processador.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 1370px 350px;
+    position: relative;
+  }
+
+  .header h1 {
+    font-size: 38px;
+    text-align: left;
+    color: white;
+  }
+
+  @media screen and (max-width: 500px) {
+    .header a {
+    float: none;
+    display: block;
+    text-align: left;
+    }
+
+   .header-right {
+    float: none;
+    }
+  }
+
+
+  .fixado {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  .footer-container {
+    margin-top: 10px;
+
+  }
+
+  .footer {
+    width: 100%;
+    padding-top:25px;
+    padding-right:25px;
+    padding-bottom:25px;
+    padding-left:25px;
+    text-align: left;
+    background-color: #88C232;
+    margin:auto;
+  }
+  
+  .footer h1 {
+    width:100%;
+    left: 50%;
+    right: 50%;
+    text-align: left;
+    font-size: 25px;
+    padding-left: 3%;
+    position: absolute;
+    transform: translateX(-50%) translateY(-50%);
+    text-align: left;
+    color: white;
+    margin:auto;
+  }
+
+  #Relogio {
+    width: 100%;
+    left: 50%;
+    right: 50%;
+    text-align: right;
+    position: absolute;
+    padding-right: 3%;
+    transform: translateX(-50%) translateY(-50%);
+    color: white;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing:8px;
+  }
+
+.collapsible-container {
+  margin-bottom: 50px;
+  margin-top: 10px;
+}
+
+.collapsible {
+  background-color: #88C232;
+  color: white;
+  cursor: pointer;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 100%;
+  text-align: left;
+  font-size: 16px;
+}
+
+.active, .collapsible:hover {
+  background-color: #88C232;
+}
+
+.collapsible:after {
+  color: #88C232;
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.collapsible-conteudo {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  padding-left: 25px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #456990;
+}
+
+.conteudo h1 {
+  color: #88C232;
+  font-weight: bold;
+  text-align: center;
+}
+
+.conteudo h2 {
+  color: #88C232;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.conteudo h3 {
+  color: #88C232;
+  text-align: right;
+  font-weight: bold;
+  font-size: 1.5em;
+
+}
+
+.imagem-esquerda {
+  float: left;
+  padding-right: 20px;
+  width: 20%;
+  height: 20%;
+}
+
+
+@media screen and (max-width: 50em) {
+  .imagem-esquerda {
+    float: none;
+    max-width: 100%;
+    margin: 0;
+  }
+  .imagem-esquerda .thumbnail {
+    width: 100%;
+  }
+  .imagem-esquerda .thumbnail img {
+    width: 100%;
+  }
+}
+
+.imagem-direita {
+  float: right;
+  padding-left: 20px;
+  width: 20%;
+  height: 20%;
+  margin-top: 10px;
+  outline: none;
+ 
+}
+
+
+@media screen and (max-width: 50em) {
+  .imagem-direita {
+    float: right;
+    max-width: 100%;
+    margin: 0;
+  }
+  .imagem-direita .thumbnail {
+    width: 100%;
+  }
+  .imagem-direita .thumbnail img {
+    width: 100%;
+  }
+}
+  </style>
+
+</head>
+<body>
+
+ <!-- CODIGO DO HEADER -->
+<div class="header" id="Header">
+  <h1>História dos Computadores</h1>
+</div>
+
+  
+ <!-- CODIGO DA NAVBAR -->
+<div class="navbar" id ="Navbar">
+  <a href="Index.html"><i class="fa fa-fw fa-home"></i> Home</a>
+  <a href="mecanismos.html"><i class="fa fa-fw fa-calculator"></i> Mecanismos de Computação</a>
+
+  <div class="dropdown" >
+    <button class="dropbtn">&nbsp;Gerações
+      <i class="material-icons" style="float:left;font-size:25px;color:white;">computer</i>
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="1geracao.html"><i class="far fa-lightbulb" style="font-size: 20px"></i> 1º Geração</a>
+      <a href="2geracao.html"><i class="fas fa-memory" style="color:white"></i> 2º Geração</a>
+      <a href="3geracao.html"><i class="fas fa-microchip"></i> 3º Geração</a>
+      <a href="4geracao.html"><i class="fas fa-signal"></i> 4º Geração</a>
+      <a href="5geracao.html"><i class="fas fa-brain"></i> 5º Geração</a>
+    </div>
+  </div>
+
+  <a href="curiosidades.html"><i class="fas fa-question-circle"></i> Curiosidades</a>
+
+  <button id="myBtn"><b style="float:right; font-size: 17px; font-family: Helvetica Neue, sans-serif;"><i class="fas fa-info-circle"></i> Acerca</b></button>
+
+  <div id="myModal" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>Acerca deste website</h2>
+    </div>
+    <div class="modal-body">
+      <div class = "row">
+        <div class = "first-column" id="colunamodal1">
+          <p> <span style="color:#3831FC;font-weight:bold">AUTORES:</span> <b>Luís Couto(89078) e Pedro Rocha(95057)</b> </p>
+          <p> <span style="color:#3831FC;font-weight:bold">DATA DE CRIAÇÃO:</span> <b>20/12/2018</b> </p>
+          <p> <span style="color:#3831FC;font-weight:bold">DISCIPLINA:</span> <b>Laboratórios de Informática</b> </p>
+          <p> <span style="color:#3831FC;font-weight:bold">CURSO:</span> <b>Engenharia de Computadores e Telemática</b> </p>
+          <p> <span style="color:#3831FC;font-weight:bold">UNIVERSIDADE:</span> <b>Universidade de Aveiro</b> </p>
+          <p><a href="http://code.ua.pt//projects/historia-dos-computadores/" title="Ir para o projeto no Code.Ua" style="color: blue; font-weight:bold; font-size: 14px">PROJETO CODE.UA</a></p>
+
+        </div>
+        <div class = "second-column" id = "colunamodal2">
+          <p> <span style="color:#3831FC;font-weight:bold">RECURSOS EXTERNOS UTILIZADOS:</span> </p>
+          <p><a href="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" style="color: blue; font-weight:bold; font-size: 14px">jQuery Library JS</a>
+           <a href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" style="color: blue; font-weight:bold; font-size: 14px">Bootstrap Minified CSS</a>
+           <a href="http://code.highcharts.com/highcharts.js" style="color: blue; font-weight:bold; font-size: 14px">Highcharts JS</a>
+           <a href="https://code.highcharts.com/modules/drilldown.js" style="color: blue; font-weight:bold; font-size: 14px">Highcharts Drilldown JS </a>
+           <a href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css" style="color: blue; font-weight:bold; font-size: 14px">Leaflet CSS</a>
+           <a href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js" style="color: blue; font-weight:bold; font-size: 14px">Leaflet JS</a>
+           <a href="https://fonts.googleapis.com/icon?family=Material+Icons" style="color: blue; font-weight:bold; font-size: 14px">Icons para a NavBar</a>
+           <a href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" style="color: blue; font-weight:bold; font-size: 14px">Icons CSS</a>
+           <a href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" style="color: blue; font-weight:bold; font-size: 14px">Icons CSS</a>
+          <a href="https://webdesign.tutsplus.com/tutorials" style="color: blue; font-weight:bold; font-size: 14px">Timeline</a>
+          <br>
+          </p>
+        
+
+          <p> <span style="color:#3831FC;font-weight:bold">CONTRIBUIÇÃO DE CADA ALUNO:</span> </p>
+          <p> <b>O aluno Luís Couto ficou encarregue da NavBar, do Footer, da Página Principal (Index), dos Mecanismos de Computação, da 1º Geração e da 2º Geração.</b></p>
+          <p><b>O aluno Pedro Rocha ficou encarregue do Header, do Acerca, da 3º Geração, da 4º Geração e da 5º Geração. </b> </p>
+          <p><b>A secção das Curiosidades foi feita por ambos os membros. </b></p>
+          <p><b>Tendo isto em conta, a contribuição de LC foi 50% e de PR 50%</b></p>
+        </div>
+    
+      </div>
+    </div>
+  </div>
+</div>
+
+   <!-- Ficheiros JS para o funcionamento da navbar -->
+ <script type = "text/javascript" src = "JS/Navbar.js" ></script> 
+ <script type = "text/javascript" src = "JS/Acerca.js" ></script> 
+</div>
+
+
+
+
+  <div class="conteudo" style="font-family: Helvetica Neue, sans-serif; padding-top: 10px; padding-bottom: 10px; padding-right: 20px; padding-left: 20px">
+     <h1>Primeira Geração de Computadores (1937-1956)</h1>
+     <br>
+    <p>A primeira geração de computadores teve inicio na década de 30 do século <i>XX</i>, sendo que esta geração apresentava poucas semelhanças aos computadores modernos, quer em aparência quer em performance. Os primeiros computadores desta geração tinham um circuito constituido por <span style="color:#88C232;"><strong>válvulas termiónicas</strong></span> e uma memória constituida por dispositivos de armazenamento denominados <span style="color:#88C232;"><strong>memória de tambor</strong></span>. Dado que o <i>input</i> era realizado através de cartões perfurados e o <i>output</i> era através de impressões, os operadores demoravam bastante tempo a configurar novos problemas. <br>
+    Como os circuitos eram constituidos por <span style="color:#88C232;"><strong>válvulas termiónicas</strong></span>, estes computadores sobre-aqueciam frequentemente e tinham muitas vezes um tamanho considerável, com alguns dos maiores a ocupar salas inteiras e a pesar várias toneladas. Era muito dispendioso manter e operar um computador desta geração, pois gastavam muita energia e requeriam manutenção constante. <br>
+    A nível de <i>software</i>, dependiam de <span style="color:#88C232;"><strong>código máquina</strong></span> para realizar operações e só conseguiam resolver um problema de cada vez.</p>
+
+    <br>
+ 
+    <h2>Válvulas termiónicas</h2>
+    <div class="imagem-esquerda">
+      <div class="thumbnail">
+        <img src="Imagens/VacuumTubes.jpg" alt="Válvulas Termiónicas">
+      </div>
+    </div>
+
+    <p>Tendo um desenvolvimento desempenhado por vários cientistas ao longo dos anos, as <span style="color:#88C232;"><strong>válvulas termiónicas</strong></span> foram completadas em 1906 pelo físico <span style="color:#88C232;"><strong>Lee de Forest</strong></span>. Eram constituídas por dois ou mais eléctrodos dentro de um tubo de metal/vidro a vácuo, podendo transmitir sinais elétricos. <br>
+    Desempenharam um grande papel na evolução dos computadores, pois foram a primeira forma de tecnologia activa a ser usada e ajudaram na formação da industria eletrónica. Sendo uma das peças chave usadas nos primeiros computadores, serviam de amplificadores e comutadores no circuito.</p>
+    <br>
+    <br>
+
+
+
+    <h3>Memória de Tambor</h3>
+    <div class="imagem-direita">
+      <div class="thumbnail">
+        <img src="Imagens/MagneticDrum.jpg" alt="Memória de Tambor">
+      </div>
+      
+    </div>
+    <br>
+    <br>
+    <p>As <span style="color:#88C232;"><strong>memória de tambor</strong></span> são dispositivos magnéticos de armazenamento de acesso direto. Capazes de recuperar informação a uma taxa de velocidade maior que acionadores de disco, foram usadas como armazenamento primário nos primeiros computadores. Apesar disto, tinham várias desvantagens, como a impossibilidade de serem removidas após a instalação e tamanho de armazenamento reduzido.</p>
+    <br>
+    <br>
+    <br>
+ 
+    <h2 id="Z1"> Código Máquina </h2>
+    <div class="imagem-esquerda">
+      <div class="thumbnail">
+        <img src="Imagens/binario.png" alt="Código'Máquina">
+      </div>
+    </div>
+
+    <p>A tecnologia de <i>software</i> nesta época era bastante primitiva, o que obrigava a que os primeiros programas fossem escritos em <span style="color:#88C232;"><strong>código máquina</strong></span> ou <span style="color:#88C232;"><strong>linguagem máquina</strong></span>. <br>
+    Esta linguagem é a de menor nível possível, a linguagem elementar dos computadores, e é constituida por uma sequência binária de 0s e 1s. Para realizar operações nestes computadores, os programadores escreviam diretamente os números que correspondiam ás instruções que tencionavam guardar na memória.</p>
+    <br>
+    <br>
+
+    <h3 id="ENIAC"> Primeiro Computador Mecânico Programável em Binário</h3>
+    <div class="imagem-direita">
+      <div class="thumbnail">
+        <img src="Imagens/Z1.jpg" alt="Z1">
+      </div>
+      
+    </div>
+    <br>
+    <br>
+    <p>Criado pelo alemão <span style="color:#88C232;"><strong>Konrad Zuse</strong></span>, o <span style="color:#88C232;"><strong>Z1</strong></span> foi o primeiro computador mecânico programável em binário. Finalizado no período de 1938, foi o primeiro computador a usar lógica booleana e números com virgula flutuante, contudo era muito lento e muitas vezes inexato nos resultados.</p>
+    <br>
+    <br>
+    <br>
+
+    <h2> Primeiro Computador Digital</h2>
+    <div class="imagem-esquerda">
+      <div class="thumbnail">
+        <img src="Imagens/ENIAC2.jpg" alt="Código'Máquina">
+      </div>
+    </div>
+
+    <p>Construido por <span style="color:#88C232;"><strong>John Mauchly e John Eckert</strong></span>, o <span style="color:#88C232;"><strong>ENIAC</strong></span> foi o primeiro computador digital programável e totalmente funcional. Originalmente criado para ajudar os EUA a fazer cálculos relacionados com a balística na Segunda Guerra Mundial, a sua construção começou em 1943, porém só teria fim em 1946, um ano após o cessar fogo. Com um peso de de 30 toneladas, sendo preciso uma sala inteira para o acomodar, este computador era capaz de realizar 5000 operações por segundo, resolvendo as quatro operações aritméticas e raizes quadradas, dando a resposta através de uma sequência de lâmpadas. Podia ser programado para resolver sequências de instruções complexas, incluindo <i>loops</i>, <i>branches</i> e sub-rotinas.</p>
+    <br>
+    <br>
+  </div>
+
+
+<div class="collapsible-container">
+  <button class="collapsible" style="font-size: 30px; text-align: center;">Resumo da 1º Geração de Computadores</button>
+  <div class="collapsible-conteudo">
+  <br>
+<ul>
+  <li>Maior poder de computação alguma vez obtido</li>
+ 
+  <li>Uso de válvulas termiónicas</li>
+
+  <li>Armazenamento primário através de memórias de tambor</li>
+
+  <li>Suporte exclusivo de linguagem máquina</li>
+  
+  <li>Utilização e manutenção muito dispendiosa</li>
+  
+  <li>Portabilidade muito reduzida devido ao tamanho e peso</li>
+  
+  <li>Memória reduzida</li>
+ 
+  <li><i>Input</i> e <i>output</i> muito lentos</li>
+</ul>
+
+  <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.maxHeight){
+        content.style.maxHeight = null;
+      } 
+      else {
+      content.style.maxHeight = content.scrollHeight + "px";
+      } 
+    });
+  }
+</script>
+</div>
+</div>
+
+
+<!-- COMEÇA O CODIGO PARA O FOOTER-->
+<div class="footer-container">
+<div class="footer">
+
+    <!-- Relógio -->
+  <div class="clock" id="Relogio" ></div>
+  <script>
+    function Tempo(){
+    var date = new Date();
+    var hora = date.getHours(); 
+    var min = date.getMinutes(); 
+    var seg = date.getSeconds(); 
+    var session = "AM";
+    
+    if(hora == 0){
+        hora = 12;
+    }
+    
+    if(hora > 12){
+        hora = hora - 12;
+        session = "PM";
+    }
+    hora = (hora < 10) ? "0" + hora : hora;
+    min = (min < 10) ? "0" + min : min;
+    seg = (seg < 10) ? "0" + seg : seg;
+    var time = hora + ":" + min + ":" + seg + " " + session;
+    document.getElementById("Relogio").innerText = time;
+    document.getElementById("Relogio").textContent = time;
+    setTimeout(Tempo, 1000);
+    }
+    Tempo();
+  </script>
+
+  <!-- Data -->
+  <h1><span style="color:white;font-size: 23px;">DATA ACTUAL: </span>
+    <script type = "text/javascript" src = "JS/Data.js" ></script> </h1>
+  </div>
+</div>
+<!-- ACABA O CODIGO PARA O FOOTER-->
+
+
+</body>
+</html>

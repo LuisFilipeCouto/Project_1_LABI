@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8">
+
+  <title>História dos Computadores</title>
+
+  <meta name="viewport" content ="width=device-width,initial-scale=1,user-scalable=yes" />
+
+  <!-- Bootstrap minified CSS -->
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+  <!-- Icons para usar -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.5.0/css/all.css' integrity='sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU' crossorigin='anonymous'>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+  <!-- Ficheiros CSS para customizar o layout do website -->
+  <link rel="stylesheet" type="text/css" href="CSS/Website.css">    
+
+  <!-- Ficheiros CSS para customizar a navbar -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="CSS/Navbar.css"> 
+  <link rel="stylesheet" type="text/css" href="CSS/Acerca.css">
+
+  <!-- Ficheiros CSS para customizar o slideshow -->
+  <link rel="stylesheet" type="text/css" href="CSS/Slideshow.css">
+
+  <!-- Ficheiros CSS para customizar a timeline-->
+  <link rel="stylesheet" type="text/css" href="CSS/Timeline.css">
+
+
+  <style>
+
+  body {
+    font: normal 16px/1.5 "Helvetica Neue", sans-serif;
+    background: #456990;
+    color: #fff;
+  } 
+
+  .header {
+    padding: 50px;
+    text-align: center;
+    background: white;
+    width: 100vw;
+    background-image: url("Imagens/processador.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 1370px 350px;
+    position: relative;
+  }
+
+  .header h1 {
+    font-size: 38px;
+    text-align: left;
+    color: white;
+  }
+
+  @media screen and (max-width: 500px) {
+    .header a {
+    float: none;
+    display: block;
+    text-align: left;
+    }
+
+   .header-right {
+    float: none;
+    }
+  }
+
+
+  .fixado {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  .footer-container {
+    margin-top: 10px;
+
+  }
+
+  .footer {
+    width: 100%;
+    padding-top:25px;
+    padding-right:25px;
+    padding-bottom:25px;
+    padding-left:25px;
+    text-align: left;
+    background-color: #88C232;
+    margin:auto;
+  }
+  
+  .footer h1 {
+    width:100%;
+    left: 50%;
+    right: 50%;
+    text-align: left;
+    font-size: 25px;
+    padding-left: 3%;
+    position: absolute;
+    transform: translateX(-50%) translateY(-50%);
+    text-align: left;
+    color: white;
+    margin:auto;
+  }
+
+  #Relogio {
+    width: 100%;
+    left: 50%;
+    right: 50%;
+    text-align: right;
+    position: absolute;
+    padding-right: 3%;
+    transform: translateX(-50%) translateY(-50%);
+    color: white;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing:8px;
+  }
+
+.imagem-esquerda {
+  float: left;
+  padding-right: 20px;
+  width: 40%;
+  height: 30%;
+}
+
+
+@media screen and (max-width: 50em) {
+  .imagem-esquerda {
+    float: none;
+    max-width: 100%;
+    margin: 0;
+  }
+  .imagem-esquerda .thumbnail {
+    width: 100%;
+  }
+  .imagem-esquerda .thumbnail img {
+    width: 100%;
+  }
+}
+
+.imagem-direita {
+  float: right;
+  padding-left: 0px;
+  width: 30%;
+  height: 20%;
+  margin-top: 10px;
+  outline: none;
+ 
+}
+
+
+@media screen and (max-width: 50em) {
+  .imagem-direita {
+    float: right;
+    max-width: 100%;
+    margin: 0;
+  }
+  .imagem-direita .thumbnail {
+    width: 100%;
+  }
+  .imagem-direita .thumbnail img {
+    width: 100%;
+  }
+}
+
+  </style>
+
+</head>
+<body>
+
+ <!-- CODIGO DO HEADER -->
+<div class="header" id="Header">
+  <h1>História dos Computadores</h1>
+</div>
+
+  
+ <!-- CODIGO DA NAVBAR -->
+<div class="navbar" id ="Navbar">
+  <a href="Index.html"><i class="fa fa-fw fa-home"></i> Home</a>
+  <a href="mecanismos.html"><i class="fa fa-fw fa-calculator"></i> Mecanismos de Computação</a>
+
+  <div class="dropdown" >
+    <button class="dropbtn">&nbsp;Gerações
+      <i class="material-icons" style="float:left;font-size:25px;color:white;">computer</i>
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="1geracao.html"><i class="far fa-lightbulb" style="font-size: 20px"></i> 1º Geração</a>
+      <a href="2geracao.html"><i class="fas fa-memory" style="color:white"></i> 2º Geração</a>
+      <a href="3geracao.html"><i class="fas fa-microchip"></i> 3º Geração</a>
+      <a href="4geracao.html"><i class="fas fa-signal"></i> 4º Geração</a>
+      <a href="5geracao.html"><i class="fas fa-brain"></i> 5º Geração</a>
+    </div>
+  </div>
+
+  <a href="curiosidades.html"><i class="fas fa-question-circle"></i> Curiosidades</a>
+
+  <button id="myBtn"><b style="float:right; font-size: 17px; font-family: Helvetica Neue, sans-serif;"><i class="fas fa-info-circle"></i> Acerca</b></button>
+
+  <div id="myModal" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>Acerca deste website</h2>
+    </div>
+    <div class="modal-body">
+      <div class = "row">
+        <div class = "first-column" id="colunamodal1">
+          <p> <span style="color:#3831FC;font-weight:bold">AUTORES:</span> <b>Luís Couto(89078) e Pedro Rocha(95057)</b> </p>
+          <p> <span style="color:#3831FC;font-weight:bold">DATA DE CRIAÇÃO:</span> <b>20/12/2018</b> </p>
+          <p> <span style="color:#3831FC;font-weight:bold">DISCIPLINA:</span> <b>Laboratórios de Informática</b> </p>
+          <p> <span style="color:#3831FC;font-weight:bold">CURSO:</span> <b>Engenharia de Computadores e Telemática</b> </p>
+          <p> <span style="color:#3831FC;font-weight:bold">UNIVERSIDADE:</span> <b>Universidade de Aveiro</b> </p>
+          <p><a href="http://code.ua.pt//projects/historia-dos-computadores/" title="Ir para o projeto no Code.Ua" style="color: blue; font-weight:bold; font-size: 14px">PROJETO CODE.UA</a></p>
+
+        </div>
+        <div class = "second-column" id = "colunamodal2">
+          <p> <span style="color:#3831FC;font-weight:bold">RECURSOS EXTERNOS UTILIZADOS:</span> </p>
+          <p><a href="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" style="color: blue; font-weight:bold; font-size: 14px">jQuery Library JS</a>
+           <a href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" style="color: blue; font-weight:bold; font-size: 14px">Bootstrap Minified CSS</a>
+           <a href="http://code.highcharts.com/highcharts.js" style="color: blue; font-weight:bold; font-size: 14px">Highcharts JS</a>
+           <a href="https://code.highcharts.com/modules/drilldown.js" style="color: blue; font-weight:bold; font-size: 14px">Highcharts Drilldown JS </a>
+           <a href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css" style="color: blue; font-weight:bold; font-size: 14px">Leaflet CSS</a>
+           <a href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js" style="color: blue; font-weight:bold; font-size: 14px">Leaflet JS</a>
+           <a href="https://fonts.googleapis.com/icon?family=Material+Icons" style="color: blue; font-weight:bold; font-size: 14px">Icons para a NavBar</a>
+           <a href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" style="color: blue; font-weight:bold; font-size: 14px">Icons CSS</a>
+           <a href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" style="color: blue; font-weight:bold; font-size: 14px">Icons CSS</a>
+          <a href="https://webdesign.tutsplus.com/tutorials" style="color: blue; font-weight:bold; font-size: 14px">Timeline</a>
+          <br>
+          </p>
+        
+
+          <p> <span style="color:#3831FC;font-weight:bold">CONTRIBUIÇÃO DE CADA ALUNO:</span> </p>
+          <p> <b>O aluno Luís Couto ficou encarregue da NavBar, do Footer, da Página Principal (Index), dos Mecanismos de Computação, da 1º Geração e da 2º Geração.</b></p>
+          <p><b>O aluno Pedro Rocha ficou encarregue do Header, do Acerca, da 3º Geração, da 4º Geração e da 5º Geração. </b> </p>
+          <p><b>A secção das Curiosidades foi feita por ambos os membros. </b></p>
+          <p><b>Tendo isto em conta, a contribuição de LC foi 50% e de PR 50%</b></p>
+        </div>
+    
+      </div>
+    </div>
+  </div>
+</div>
+
+   <!-- Ficheiros JS para o funcionamento da navbar --> 
+ <script type = "text/javascript" src = "JS/Acerca.js" ></script> 
+ <script type = "text/javascript" src = "JS/Navbar.js" ></script>
+</div>
+
+
+<!-- CODIGO PARA O RESTO DO SITE -->
+<div class="row" id = "linha1">
+  <div class="first-column" id="coluna1">
+    <br>
+    <br>
+    <div class="conteudo" style="font-family: Helvetica Neue, sans-serif; padding-right: 10px; padding-left: 10px">
+     <br>
+ 
+    <h2>O que é um computador?</h2>
+    <br>
+    <div class="imagem-esquerda">
+      <div class="thumbnail">
+        <img src="Imagens/computador.jpg" alt="computador">
+      </div>
+    </div>
+    <p> Um computador é um dispositivo eletrónico capaz de tratamento automático de informação e processamento de dados. Possui bastantes usos e capacidades, entre eles o armazenamento e processamento de dados, comunicação e navegação na internet, cálculo e resolução de problemas complexos, modelação de sistemas e objetos, sendo também capaz de gerar e tratar imagens gráficas. <br>
+    Em geral, entende-se por computador um <span style="color:#88C232;"><strong>sistema físico que realiza algum tipo de computação</strong></span>.</p>
+    <br>
+    <br>
+    <h2>Qual é a sua constituição?</h2>
+    <div class="imagem-direita">
+      <div class="thumbnail">
+        <img src="Imagens/hardware.jpg" alt="Hardware">
+      </div>
+          
+    </div>
+    <br>
+    <p><span style="color:#88C232;"><strong> <i>Hardware</i></strong></span> - Constituido por todas as partes físicamente tangiveís do computador, isto é, que têm uma estrutura física. Os dispositivos de <i> hardware</i> internos que constituem o computador e garantem a sua funcionalidade são chamados de <span style="color:#88C232;"><strong> componentes</strong></span> (CPU, RAM, etc.) enquanto que os externos não essenciais para as funções do computador são chamados <span style="color:#88C232;"><strong>periféricos</strong></span> (rato, teclado, etc.).</p> 
+    <br>
+    <br>
+    <div class="imagem-esquerda">
+      <div class="thumbnail">
+        <img src="Imagens/software.jpg" alt="Software">
+      </div>
+    </div>
+    <br>
+    <p><span style="color:#88C232;"><strong> <i>Software</i></strong></span> - É uma coleção de dados ou sequência de instruções a serem seguidas e/ou executadas por um computador. O <span style="color:#88C232;"><strong> <i>Software</i> do Sistema</strong></span> (sistemas operativos, <i>game engines</i>, etc.) serve de plataforma para outros tipos de <i>software</i>. O <span style="color:#88C232;"><strong> <i>Software</i> de Programação</strong></span> (compiladores, <i>linkers, <i>debuggers, etc.</i></i>) serve para os utilizadores criarem ou manterem outro tipo de programas. O <span style="color:#88C232;"><strong> <i>Software</i> Aplicativo</strong></span> (anti-vírus, pacotes de <i>office, etc.</i>) realiza tarefas específicas.</p> 
+    <br>
+    <br>
+
+    <h2>Como evoluiu?</h2>
+    <br>
+    <div class="imagem-direita">
+      <div class="thumbnail">
+        <img src="Imagens/evolucao.gif" alt="computador">
+      </div>
+    </div>
+    Os computadores modernos não foram uma invenção singular, mas sim uma obra colectiva que evoluiu ao longo dos anos, fruto do esforço de muitos físicos, matemáticos e engenheiros que se dedicaram a melhorar o que já existia. <br>
+    De maneira breve, esta evolução começou na Antiguidade, com os <a href="mecanismos.html" title="Ir para a página dos mecanismos de computação" style="color: #88C232; font-weight: bolder;">mecanismos de computação</a> e iria ser uma evolução muito lenta, até 1937. 
+    A partir de 1937, podemos dividir a evolução do computador em 5 gerações, sendo que temos a <a href="1geracao.html" title="Ir para a página da 1º geração" style="color: #88C232; font-weight: bolder;">1º geração</a> que durou até 1956 e que deu lugar à <a href="2geracao.html" title="Ir para a página da 2º geração" style="color: #88C232; font-weight: bolder;">2º geração.</a> <br> 
+    Com o fim desta, em 1965, teve iníco a <a href="3geracao.html" title="Ir para a página da 3º geração" style="color: #88C232; font-weight: bolder;">3º geração</a>, que acabou em 1971, seguindo-se a <a href="4geracao.html" title="Ir para a página da 4º geração" style="color: #88C232; font-weight: bolder;">4º geração</a> com fim em 1981 e finalmente a <a href="5geracao.html" title="Ir para a página da 5º geração" style="color: #88C232; font-weight: bolder;">5º geração</a>, que ainda não teve fim.
+
+
+
+    <br>
+    <br>
+   
+  </div>
+
+  </div>
+
+
+
+  <div class="second-column" id="coluna2">
+
+      <h2>Grandes contribuidores</h2>
+
+    <div class="slideshow-container">
+     
+      <div class="Slides">
+        <div class="card"id="pascal"> 
+          <a href="mecanismos.html#Pascaline"> <img src="Imagens/pascal.jpg" alt="Blaise Pascal" style="width:400px; height: 500px"></a>
+             <h2 style="text-align:center;color:#88C232;font-weight:bold; font-size: 28px;">Blaise Pascal</h2>
+             <span style="font-weight:bold">Criador da La Pascaline, a primeira calculadora mecânica</span> 
+             <br>
+        </div>
+      </div>
+
+      <div class="Slides">
+        <div class="card">
+          <a href="mecanismos.html#Diferencial">  <img src="Imagens/charles-cabbage.jpg" alt="Charles Cabbage" style="width:400px; height: 500px"></a>
+             <h2 style="text-align:center;color:#88C232;font-weight:bold; font-size: 28px;">Charles Cabbage</h2>
+             <span style="font-weight:bold">Criador da Máquina Analítica, o primeiro computador mecânico programável</span> 
+        </div>
+      </div>
+
+      <div class="Slides">
+        <div class="card">
+          <img src="Imagens/boole.jpg" alt="George Boole" style="width:400px; height: 500px">
+             <h2 style="text-align:center;color:#88C232;font-weight:bold; font-size: 28px;">George Boole</h2>
+             <span style="font-weight:bold">Criador da álgebra booleana</span> 
+             <br>
+             <br>
+        </div>
+      </div>
+
+      <div class="Slides">
+        <div class="card">
+          <a href="5geracao.html#Turing">  <img src="Imagens/alan-turing.jpg" alt="Alan Turing" style="width:400px; height: 500px"></a>
+             <h2 style="text-align:center;color:#88C232;font-weight:bold; font-size: 28px;">Alan Turing</h2>
+             <span style="font-weight:bold">Pioneiro da Ciência da Computação</span> 
+             <br>
+             <span style="font-weight:bold">Pioneiro da Inteligência Artificial</span> 
+        </div>
+      </div>
+      
+
+      <div class="Slides">
+        <div class="card">
+          <a href="1geracao.html#Z1">  <img src="Imagens/konrad.jpg" alt="Konrad Zuse" style="width:400px; height: 500px"></a>
+             <h2 style="text-align:center;color:#88C232;font-weight:bold; font-size: 28px;">Konrad Zuse</h2>
+             <span style="font-weight:bold">Criador do Z1, o primeiro computador mecânico programável em binário</span> 
+        </div>
+      </div>
+
+
+      <div class="Slides">
+        <div class="card">
+          <a href="1geracao.html#ENIAC">  <img src="Imagens/ENIAC.png" alt="John Mauchly & John Eckert" style="width:400px; height: 500px"></a>
+             <h2 style="text-align:center;color:#88C232;font-weight:bold; font-size: 28px;">John Mauchly e John Eckert</h2>
+             <span style="font-weight:bold">Criadores do ENIAC, o primeiro computador digital</span> 
+             <br>
+             <br>
+        </div>
+      </div>
+
+
+      <div class="Slides">
+        <div class="card">
+          <a href="2geracao.html#Transistor"><img src="Imagens/transistor.png" alt="William Shockley, John Bardeen e Walter Brattain" style="width:400px; height: 500px"></a>
+             <h2 style="text-align:center;color:#88C232;font-weight:bold; font-size: 28px;">William Shockley, John Bardeen e Walter Brattain</h2>
+             <span style="font-weight:bold">Criadores do transístor</span> 
+             <br>
+        </div>
+      </div>
+ 
+      <div class="Slides">
+        <div class="card">
+          <a href="3geracao.html#FORTRAN"> <img src="Imagens/backus.jpg" alt="John Backus" style="width:400px; height: 500px"></a>
+             <h2 style="text-align:center;color:#88C232;font-weight:bold; font-size: 28px;">John Backus</h2>
+             <span style="font-weight:bold">Criador do FORTRAN, a primeira linguagem de alto nível disponível comercialmente</span> 
+             <br>
+        </div>
+      </div>
+
+      <div class="Slides">
+        <div class="card">
+          <a href="3geracao.html#Circuito"> <img src="Imagens/kilby.jpeg" alt="Jack Kilby" style="width:400px; height: 500px"></a>
+             <h2 style="text-align:center;color:#88C232;font-weight:bold; font-size: 28px;">Jack Kilby</h2>
+             <span style="font-weight:bold">Criador do primeiro circuito integrado funcional</span> 
+             <br>
+             <br>
+        </div>
+      </div>
+
+       <div class="Slides">
+        <div class="card">
+          <a href="3geracao.html#Moore"> <img src="Imagens/moore.jpg" alt="Gordon Moore" style="width:400px; height: 500px"></a>
+             <h2 style="text-align:center;color:#88C232;font-weight:bold; font-size: 28px;">Gordon Moore</h2>
+             <span style="font-weight:bold">Co-fundador da Intel</span> 
+             <br>
+             <span style="font-weight:bold">Autor da Lei de Moore</span> 
+        </div>
+      </div>
+
+    
+      <div class="Slides">
+        <div class="card">
+          <a href="4geracao.html#UNIX"> <img src="Imagens/unix.jpeg" alt="Dennis Ritchie e Ken Thompson" style="width:400px; height: 500px"></a>
+             <h2 style="text-align:center;color:#88C232;font-weight:bold; font-size: 28px;">Dennis Ritchie e Ken Thompson</h2>
+             <span style="font-weight:bold">Criadores do UNIX</span> 
+             <br>
+        </div>
+      </div>
+
+      <div class="Slides">
+        <div class="card">
+          <a href="4geracao.html#Micro"> <img src="Imagens/micro.jpg" alt="Federico Faggins, Ted Hoff & Stanley Mazor" style="width:400px; height: 500px"></a>
+             <h2 style="text-align:center;color:#88C232;font-weight:bold; font-size: 28px;">Federico Faggins, Ted Hoff e Stanley Mazor</h2>
+             <span style="font-weight:bold">Criadores do Intel 4004, o primeiro microprocessador</span> 
+        </div>
+      </div>
+
+       <div class="Slides">
+        <div class="card">
+          <a href="4geracao.html#Internet"> <img src="Imagens/IP.jpg" alt="Vinton Cerf e Robert Khan" style="width:400px; height: 500px"></a>
+             <h2 style="text-align:center;color:#88C232;font-weight:bold; font-size: 28px;">Vinton Cerf e Robert Khan</h2>
+             <span style="font-weight:bold">Criadores do protocolo TCP/IP</span> 
+             <br>
+             <br>
+        </div>
+      </div>
+
+
+      <div class="Slides">
+        <div class="card">
+          <a href="4geracao.html#Empresas"> <img src="Imagens/microsoft.jpg" alt="Paul Allen e Bill Gates" style="width:400px; height: 500px"></a>
+             <h2 style="text-align:center;color:#88C232;font-weight:bold; font-size: 28px;">Paul Allen e Bill Gates</h2>
+             <span style="font-weight:bold">Fundadores da Microsoft Corporation</span> 
+             <br>
+             <br>
+        </div>
+      </div>
+
+      <div class="Slides">
+        <div class="card">
+          <a href="4geracao.html#Empresas"> <img src="Imagens/apple.jpeg" alt="Stephen Wozniak e Steve Jobs" style="width:400px; height: 500px"></a>
+             <h2 style="text-align:center;color:#88C232;font-weight:bold; font-size: 28px;">Stephen Wozniak e Steve Jobs</h2>
+             <span style="font-weight:bold">Fundadores da Apple Inc. </span> 
+             <br>
+        </div>
+      </div>
+
+
+      <div class="Slides">
+        <div class="card">
+          <a href="4geracao.html#Internet"> <img src="Imagens/tim-lee.jpeg" alt="Timothy Lee" style="width:400px; height: 500px"></a>
+             <h2 style="text-align:center;color:#88C232;font-weight:bold; font-size: 28px;">Timothy Lee</h2>
+             <span style="font-weight:bold">Criador da World Wide Web </span> 
+             <br>
+             <span style="font-weight:bold">Criador de HTML e HTTP </span> 
+        </div>
+      </div>  
+      <br>
+
+    </div>
+
+
+    <div style="text-align:center">
+      <span class="ponto"></span> 
+      <span class="ponto"></span> 
+      <span class="ponto"></span> 
+      <span class="ponto"></span> 
+      <span class="ponto"></span> 
+      <span class="ponto"></span>
+      <span class="ponto"></span>
+      <span class="ponto"></span>
+      <span class="ponto"></span>
+      <span class="ponto"></span>
+      <span class="ponto"></span>
+      <span class="ponto"></span>
+      <span class="ponto"></span>
+      <span class="ponto"></span>
+      <span class="ponto"></span>
+      <span class="ponto"></span>
+    </div>
+  </div>
+
+   <!-- Código JS para o slideshow -->
+ <script type = "text/javascript" src = "JS/slideshow.js" ></script> 
+
+</div>
+
+<div class="row" >
+<div class="container">
+<section class="timeline">
+<h2><span style="color:#88C232;font-weight:bold">Eventos Marcantes na Evolução do Computador</span> </h2>
+  <ol>
+    <li>
+      <div>
+        <time>1642</time> O matemático <b>Blaise Pascal</b> inventa a <b> La Pascaline</b>, a primeira calculadora meĉanica capaz de fazer adições e subtrações diretamente.
+      </div>
+    </li>
+    <li>
+      <div>
+        <time>1834</time> O cientista <b>Charles Cabbage</b> concebe a <b>Máquina Analítica </b>, considerada como o primeiro computador mecânica programável que possuia ALU, memória integrada e controlo de fluxo.
+      </div>
+    </li>
+    <li>
+      <div>
+        <time>1847</time> O matemático <b>George Boole </b> desenvolve a <b>Lógica Booleana</b>, que constitui a base para o design de todos os circuitos digitais utilizados actualmente. 
+      </div>
+    </li>
+    <li>
+      <div>
+        <time>1936</time> <b>Alan Turing</b> publica um artigo onde introduz a noção de <b>Máquina de Turing</b>, um modelo de computação abstrato capaz de modelar qualquer computador digital, muito importante na criação da Ciência da Computação.
+      </div>
+    </li>
+    <li>
+      <div>
+        <time>1938</time> <b>Konrad Zuse</b> completa o <b>Z1</b>, o primeiro computador mecânico programável em binário que utilizava lógica booleana e números com virgula flutuante.s
+      </div>
+    </li>
+    <li>
+      <div>
+        <time>1946</time> <b>John Mauchly e John Eckert </b> constroem o <b>ENIAC</b>, o primeiro computador digital programável, capaz de realizar operações aritméticas e raizes quadradas e de resolver sequências de instruções complexas.
+      </div>
+    </li>
+    <li>
+      <div>
+        <time>1947</time> <b>William Shockley, John Bardeen e Walter Brattain </b> inventam o <b> transístor</b>, um dispositivo semi-condutor capaz de amplificar, controlar e gerar sináis elétricos e que seria mais tarde fundamental para a construção de circuitos integrados.
+      </div>
+    </li>
+    <li>
+      <div>
+        <time>1950</time> <b>Alan Turing</b> publica um artigo onde apresenta o <b>Teste de Turing</b>, que testa a capacidade de uma máquina exibir comportamento inteligente equivalente ou indistinguível de um humano, sendo um dos pilares da filosofia da Inteligência Artificial.
+      </div>
+    </li>
+    <li>
+      <div>
+        <time>1954</time> <b>John Backus</b> desenvolve o <b>FORTRAN</b>, a primeira linguagem de programação de alto nível a ser disponibilizada comercialmente, usada para cálculos matemáticos complexos e análise numérica. 
+      </div>
+    </li>
+    <li>
+      <div>
+        <time>1958</time> <b>Jack Kilby</b> constroi o primeiro <b>Circuito Integrado</b> funcional, o que permitiu o aumento da velocidade de processamento dos computadores, assim como a diminuição do seu tamanho e custo de fabrico.
+      </div>
+    </li>
+    <li>
+      <div>
+        <time>1965</time> <b>Gordon Moore</b>, co-fundador da Intel, publica a <b>Lei de Moore</b>, que sugeria que o número de transístores presentes nos processadores iria duplicar a cada ano, durante pelo menos uma década a seguir à publicação.
+      </div>
+    </li>
+    <li>
+      <div>
+        <time>1969</time> <b>Ken Thompson e Dennis Ritchie</b> começam a desenvolver o <b>UNIX</b>, escrito em linguagem C, que apresentava grande portabilidade, sendo um dos "pais" de todos os futuros sistemas operativos.
+      </div>
+    </li>
+
+    <li>
+      <div>
+        <time>1969</time> É criado o projeto <b>ARPANET</b>, liderado pelo <b>Departamento de Defesa dos EUA</b>, sendo a primeira rede operacional de computadores à base de comutação de pacotes. É considerado a base original da internet.
+      </div>
+    </li>
+
+    <li>
+      <div>
+        <time>1971</time> <b>Federico Faggin, Ted Hoff e Stanley Mazor</b>, desenvolvem, a partir do circuito integrado, o <b>Intel 4004</b>, o primeiro microprocessador disponivel comercialmente.
+      </div>
+    </li>
+
+
+    <li>
+      <div>
+        <time>1973</time> <b>Vinton Cerf e Robert Khan</b> desenvolvem o protocolo de comunicação entre computadores e redes, o protocolo <b>TCP/IP</b>.
+      </div>
+    </li>
+
+    <li>
+      <div>
+        <time>1974</time> Surge a <b>Ethernet</b>, uma arquitetura de interconexão para redes locais (<b>LAN</b>), que permite ligar computadores a outros computadores ou dispositivos, trocando dados entre eles.
+      </div>
+    </li>
+
+    <li>
+      <div>
+        <time>1975</time> <b>Bill Gates e Paul Allen</b> criam a <b>Microsoft Corporation</b>, empresa que mais tarde viria a lançar o sistema operativo multitarefas <b>Microsoft Windows</b>.
+      </div>
+    </li>
+
+    <li>
+      <div>
+        <time>1976</time> <b>Stephen Wozniak e Steve Jobs</b> fundam a <b>Apple Inc.</b> para lançar o <b>Apple I</b>, o primeiro computador pessoal comercializado. Também viriam mais tarde a lançar o sistema operativo multitarefas <b>MacOS</b>.
+      </div>
+    </li>
+
+    <li>
+      <div>
+        <time>1990</time> <b>Timothy Lee</b> cria as primeiras versões de <b>HTTP</b> e <b>HTML</b> e, usando essas ferramentas, cria a <b>World Wide Web</b>, dando inicio assim à internet como a conhecemos.
+      </div>
+    </li>
+
+    <li></li>
+
+  </ol>
+  <div class="arrows">
+    <button class="arrow arrow__prev disabled" disabled>
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/arrow_prev.svg" alt="prev timeline arrow">
+    </button>
+    <button class="arrow arrow__next">
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/arrow_next.svg" alt="next timeline arrow">
+    </button>
+  </div>
+</section>
+
+   <!-- Código JS para o slideshow -->
+<script type = "text/javascript" src = "JS/Timeline.js" ></script> 
+
+</div>
+</div>
+
+
+
+<!-- COMEÇA O CODIGO PARA O FOOTER-->
+<div class="footer-container">
+<div class="footer">
+
+    <!-- Relógio -->
+  <div class="clock" id="Relogio" ></div>
+  <script>
+    function Tempo(){
+    var data = new Date();
+    var sessao = "AM";
+    var hora = data.getHours(); 
+    var min = data.getMinutes(); 
+    var seg = data.getSeconds(); 
+    
+    
+    if(hora == 0){
+        hora = 12;
+    }
+    
+    if(hora > 12){
+        hora = hora - 12;
+        sessao = "PM";
+    }
+    seg = (seg < 10) ? "0" + seg : seg;
+    min = (min < 10) ? "0" + min : min;
+    hora = (hora < 10) ? "0" + hora : hora;
+    var horas = hora + ":" + min + ":" + seg + " " + sessao;
+    document.getElementById("Relogio").textContent = horas;
+    document.getElementById("Relogio").innerText = horas;
+    setTimeout(Tempo, 1000);
+    }
+    Tempo();
+  </script>
+
+  <!-- Data -->
+  <div id="data">
+  <h1><span style="color:white;font-size: 23px;">DATA ACTUAL: </span>
+    <script type = "text/javascript" src = "JS/Data.js" ></script> </h1>
+  </div>
+</div>
+</div>
+<!-- ACABA O CODIGO PARA O FOOTER-->
+
+
+
+
+
+</body>
+</html>
+
+
+
