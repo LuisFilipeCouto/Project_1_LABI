@@ -1,7 +1,7 @@
 # Project_1_LABI
 
 ### About the project
-A website about History of Computing with several dynamic and interactive elements (timeline, slideshow, maps, dynamic graphs, etc.). Works on all browsers and all operating systems with all screen sizes.
+A website about History of Computing with several dynamic and interactive elements (timeline, slideshow, maps, dynamic graphs, etc.). Works on all browsers and all operating systems.
 
 Git was used to manage the project.
 
