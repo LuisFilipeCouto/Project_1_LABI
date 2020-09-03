@@ -6,7 +6,7 @@ A website about History of Computing containing several dynamic and interactive 
 Git was used to manage the project.
 
 ### Detailed description/usage
-Download the folders and files, correctly place them in directories, open one of the .html files with a browser and navigate the website.
+Download the folders and files, correctly store them in directories, open one of the .html files with a browser and navigate the website.
 
 ### Programming/Scripting/Markup Languages
 `JavaScript` `HTML` `CSS`  
