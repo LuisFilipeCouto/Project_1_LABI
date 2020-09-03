@@ -8,5 +8,5 @@ Git was used to manage the project.
 ### Detailed description/usage
 Download the files, place them in the right directories, open one of the .html files with a browser and navigate the website.
 
-### Programming Languages
-`HTML` `CSS` `JavaScript` 
+### Pogramming/Scripting/Markup Languages
+`JavaScript` `HTML` `CSS`  
